@@ -27,9 +27,8 @@ landing-lola-burger/
 ├── js/
 │   └── main.js
 ├── img/
-│   └── team/
-│       ├── miembro1.jpg
-│       └── miembro2.jpg
+│   ├── miembro1.jpg
+│   └── miembro2.jpg
 ├── LICENSE
 └── README.md
 👥 Contribuyentes
