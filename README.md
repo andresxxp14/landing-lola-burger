@@ -1,61 +1,46 @@
 # 🍔 Lola Street Food — Landing Page
 
-Landing page moderna, atractiva y responsiva para el negocio local de comida rápida **Lola Street Food**, desarrollada con HTML5, CSS3 puro y JavaScript moderno.
+Landing page moderna y responsiva para el negocio local de comida rápida **Lola Street Food**, desarrollada con apoyo de agentes de IA en **Google Antigravity**.
 
-## 📁 Estructura de archivos
+## ✨ 5 Funcionalidades Principales (Features)
+1. **Diseño Responsivo:** Adaptable a dispositivos móviles, tablets y pantallas de escritorio, con menú de navegación para móviles.
+2. **Menú y Filtro Rápido:** Filtrado de productos por categorías (*Todos*, *Hamburguesas*, *Acompañantes*, *Veggie*) y notificaciones visuales.
+3. **Formulario con Validación y WhatsApp:** Validación de campos en el formulario de contacto y armado automático de mensaje hacia WhatsApp.
+4. **Sección de Equipo de Desarrollo:** Presentación de los integrantes con sus fotografías, roles y descripciones.
+5. **Información del Negocio y Footer:** Horarios, datos de contacto, ubicación y enlaces organizados para los clientes.
 
-```
-lola-street-food/
-├── index.html              ← Página principal (Navbar, Hero, Menú con filtros, Equipo, Formulario y Footer)
+## 🛠️ Stack Tecnológico
+* **Frontend / UI:** HTML5, CSS3 (`styles.css`, `animations.css`, `responsive.css`).
+* **Backend / Lógica:** JavaScript (`main.js`).
+* **Agentes de IA y Entorno:** Google Antigravity (Claude Sonnet para frontend/UI y Gemini Flash para lógica/backend).
+* **Control de Versiones:** Git y GitHub.
+
+## 📁 Estructura de Carpetas
+
+```text
+landing-lola-burger/
+├── index.html
 ├── css/
-│   ├── styles.css          ← Estilos globales, variables, layout, formulario y filtros
-│   ├── animations.css      ← Efectos de scroll (IntersectionObserver), shimmer y animaciones
-│   └── responsive.css      ← Breakpoints y optimizaciones multidispositivo
+│   ├── styles.css
+│   ├── animations.css
+│   └── responsive.css
 ├── js/
-│   └── main.js             ← Filtro dinámico de productos, validación de formulario y generador WhatsApp
-└── img/
-    ├── hero.jpg            ← (opcional) Imagen principal del Hero
-    └── team/
-        ├── miembro1.jpg    ← (opcional) Fotos del equipo de desarrollo
-        ├── miembro2.jpg
-        ├── miembro3.jpg
-        └── miembro4.jpg
-```
+│   └── main.js
+├── img/
+│   └── team/
+│       ├── miembro1.jpg
+│       └── miembro2.jpg
+├── LICENSE
+└── README.md
+👥 Contribuyentes
+Andrés Pereira — Frontend, UI, control de versiones (Git/GitHub) y documentación.
 
-## ✅ Secciones y Características
+Andrés Urbina — Backend / Lógica (JavaScript, filtros, validación y flujo de contacto).
 
-| # | Sección / Módulo | Funcionalidades |
-|---|-------------------|-----------------|
-| 1 | **Navbar** | Fija con efecto de desenfoque al scrollear, indicador de sección activa y menú toggle responsivo para móviles. |
-| 2 | **Hero Principal** | Degradados modernos, badges flotantes, llamado a la acción y contadores estadísticos animados. |
-| 3 | **Menú y Filtro Rápido** | **Nuevo:** Filtro por categorías (*Todos*, *Hamburguesas*, *Acompañantes*, *Veggie*) con animaciones fluidas, tarjetas detalladas, precios en bolívares y botón rápido de adición con notificación toast. |
-| 4 | **Equipo de Desarrollo** | Espacio dedicado para fotos circulares, roles técnicos, biografías de los integrantes y enlaces a redes sociales (GitHub, LinkedIn, Instagram). |
-| 5 | **Contacto & Formulario** | **Nuevo:** Formulario interactivo con validación de campos en tiempo real (nombre, teléfono, selección de producto y mensaje). Genera y abre un enlace directo hacia **WhatsApp** con el pedido redactado. |
-| 6 | **Footer** | Horarios de atención con badge de estado, ubicación física, números de teléfono, correos y copyright con año automático. |
+📄 Licencia
+Este proyecto cuenta con Licencia MIT. Revisa el archivo LICENSE para más detalles.
 
-## ⚙️ Personalización rápida
+🚀 Visualización del Proyecto
+Abre el archivo index.html en tu navegador web (Chrome, Edge, Firefox, etc.) para visualizar la página y probar su diseño en escritorio y móvil.
 
-### 1. Número de WhatsApp
-En `js/main.js`, busca la variable `whatsappPhone`:
-```js
-const whatsappPhone = '584165550000'; // ← Reemplaza con el código de país y número real sin símbolos (+, -)
-```
-
-### 2. Filtro de Productos y Categorías
-Para añadir más categorías o productos, agrega el atributo `data-category="nombre-categoria"` a las tarjetas `<article class="menu-card">` y su botón correspondiente con `data-filter="nombre-categoria"`.
-
-### 3. Fotos y Datos del Equipo
-En `index.html` (sección `#equipo`), puedes sustituir los placeholders por imágenes:
-```html
-<img src="img/team/tu-foto.jpg" alt="Nombre del integrante" />
-```
-Y actualizar los nombres, roles y biografías de los integrantes.
-
-## 🚀 Cómo visualizar el proyecto
-
-No necesitas instalar Node.js ni configurar servidores locales:
-1. Haz doble clic en `index.html` o ábrelo con tu navegador preferido (Chrome, Edge, Firefox, Safari).
-2. Es 100% responsivo para teléfonos inteligentes, tablets y computadoras de escritorio.
-
----
-*UNERMB · Proyecto de Electiva · 2026*
+UNERMB · Proyecto de Electiva · 2026
