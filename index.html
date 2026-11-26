@@ -1,605 +1,865 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Lola Street Food – Las mejores hamburguesas artesanales y comida rápida de la ciudad. Pide ya y recibe a domicilio." />
-  <title>Lola Street Food 🍔 | Hamburguesas Artesanales</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lola Street Food – Las mejores hamburguesas artesanales y comida rápida de la ciudad. Pide ya y recibe a domicilio."
+    />
+    <title>Lola Street Food 🍔 | Hamburguesas Artesanales</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/animations.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 
-  <!-- Favicon emoji -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍔</text></svg>" />
-</head>
-<body>
-
-  <!-- ===================================================
+    <!-- Favicon emoji -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍔</text></svg>"
+    />
+  </head>
+  <body>
+    <!-- ===================================================
        NAVBAR
   =================================================== -->
-  <nav class="navbar" aria-label="Navegación principal">
-    <div class="container nav-inner">
+    <nav class="navbar" aria-label="Navegación principal">
+      <div class="container nav-inner">
+        <!-- Logo -->
+        <a
+          href="#inicio"
+          class="nav-logo"
+          aria-label="Lola Street Food - Inicio"
+        >
+          <span class="logo-icon" aria-hidden="true">🍔</span>
+          <span
+            >Lola
+            <span style="color: var(--clr-primary)">Street</span> Food</span
+          >
+        </a>
 
-      <!-- Logo -->
-      <a href="#inicio" class="nav-logo" aria-label="Lola Street Food - Inicio">
-        <span class="logo-icon" aria-hidden="true">🍔</span>
-        <span>Lola <span style="color:var(--clr-primary)">Street</span> Food</span>
-      </a>
+        <!-- Desktop links -->
+        <ul class="nav-links" role="list">
+          <li><a href="#inicio" class="active">Inicio</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li>
+            <a
+              href="#menu"
+              class="btn btn-primary"
+              style="padding: 0.55rem 1.4rem; font-size: 0.88rem"
+            >
+              🛒 Pedir Ahora
+            </a>
+          </li>
+        </ul>
 
-      <!-- Desktop links -->
-      <ul class="nav-links" role="list">
-        <li><a href="#inicio"   class="active">Inicio</a></li>
-        <li><a href="#menu">Menú</a></li>
-        <li><a href="#equipo">Equipo</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li>
-          <a href="#menu" class="btn btn-primary" style="padding:.55rem 1.4rem;font-size:.88rem;">
-            🛒 Pedir Ahora
-          </a>
-        </li>
-      </ul>
+        <!-- Mobile toggle -->
+        <button
+          class="nav-toggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
 
-      <!-- Mobile toggle -->
-      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-    </div>
-  </nav>
-
-
-  <!-- ===================================================
+    <!-- ===================================================
        HERO
   =================================================== -->
-  <section id="inicio" class="hero" aria-label="Sección principal">
-    <div class="hero-bg" aria-hidden="true">
-      <div class="hero-blob hero-blob-1"></div>
-      <div class="hero-blob hero-blob-2"></div>
-    </div>
+    <section id="inicio" class="hero" aria-label="Sección principal">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+      </div>
 
-    <div class="container hero-content">
+      <div class="container hero-content">
+        <!-- Text column -->
+        <div class="hero-text">
+          <p class="hero-eyebrow">🔥 El sabor que conquista</p>
 
-      <!-- Text column -->
-      <div class="hero-text">
-        <p class="hero-eyebrow">🔥 El sabor que conquista</p>
+          <h1 class="hero-title">
+            La Mejor<br />
+            <span class="highlight">Hamburguesa</span><br />
+            de la Ciudad
+          </h1>
 
-        <h1 class="hero-title">
-          La Mejor<br />
-          <span class="highlight">Hamburguesa</span><br />
-          de la Ciudad
-        </h1>
+          <p class="hero-desc">
+            Ingredientes frescos, recetas únicas y el sabor auténtico de la
+            calle directo a tu mesa. ¡Cada mordida es una experiencia!
+          </p>
 
-        <p class="hero-desc">
-          Ingredientes frescos, recetas únicas y el sabor auténtico de la calle
-          directo a tu mesa. ¡Cada mordida es una experiencia!
-        </p>
+          <div class="hero-cta">
+            <button
+              class="btn btn-primary btn-wa ring"
+              aria-label="Contactar por WhatsApp"
+            >
+              💬 Contáctanos
+            </button>
+            <a href="#menu" class="btn btn-outline" aria-label="Ver el menú">
+              🍟 Ver Menú
+            </a>
+          </div>
 
-        <div class="hero-cta">
-          <button class="btn btn-primary btn-wa ring" aria-label="Contactar por WhatsApp">
-            💬 Contáctanos
-          </button>
-          <a href="#menu" class="btn btn-outline" aria-label="Ver el menú">
-            🍟 Ver Menú
-          </a>
+          <!-- Stats -->
+          <div class="hero-stats" aria-label="Estadísticas del negocio">
+            <div class="stat-item">
+              <p class="stat-num" data-target="500" data-suffix="+">0+</p>
+              <p class="stat-label">Pedidos / mes</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-num" data-target="4" data-suffix="★">0★</p>
+              <p class="stat-label">Calificación</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-num" data-target="3" data-suffix=" años">0 años</p>
+              <p class="stat-label">Sirviendo sabor</p>
+            </div>
+          </div>
         </div>
 
-        <!-- Stats -->
-        <div class="hero-stats" aria-label="Estadísticas del negocio">
-          <div class="stat-item">
-            <p class="stat-num" data-target="500" data-suffix="+">0+</p>
-            <p class="stat-label">Pedidos / mes</p>
+        <!-- Visual column -->
+        <div class="hero-visual" data-reveal="right">
+          <div class="hero-image-wrapper shimmer">
+            <!-- Reemplaza este bloque con <img src="img/hero.jpg" alt="Hamburguesa Lola"> -->
+            <div class="hero-image-placeholder" aria-hidden="true">
+              <span
+                style="
+                  font-size: 7rem;
+                  position: relative;
+                  z-index: 1;
+                  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.5));
+                "
+                >🍔</span
+              >
+              <p
+                style="
+                  font-size: 0.8rem;
+                  color: rgba(255, 255, 255, 0.3);
+                  position: relative;
+                  z-index: 1;
+                "
+              >
+                img/hero.jpg
+              </p>
+            </div>
           </div>
-          <div class="stat-item">
-            <p class="stat-num" data-target="4" data-suffix="★">0★</p>
-            <p class="stat-label">Calificación</p>
+
+          <!-- Badges flotantes -->
+          <div class="hero-badge" aria-hidden="true">
+            <span class="badge-icon">🚀</span>
+            <div>
+              <p class="badge-text">Entrega Rápida</p>
+              <p class="badge-sub">30 min o menos</p>
+            </div>
           </div>
-          <div class="stat-item">
-            <p class="stat-num" data-target="3" data-suffix=" años">0 años</p>
-            <p class="stat-label">Sirviendo sabor</p>
+
+          <div class="hero-rating" aria-hidden="true">
+            <p class="stars">⭐⭐⭐⭐⭐</p>
+            <p class="rating-num">4.9</p>
+            <p class="rating-label">Calificación</p>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Visual column -->
-      <div class="hero-visual" data-reveal="right">
-        <div class="hero-image-wrapper shimmer">
-          <!-- Reemplaza este bloque con <img src="img/hero.jpg" alt="Hamburguesa Lola"> -->
-          <div class="hero-image-placeholder" aria-hidden="true">
-            <span style="font-size:7rem;position:relative;z-index:1;filter:drop-shadow(0 8px 24px rgba(0,0,0,.5))">🍔</span>
-            <p style="font-size:.8rem;color:rgba(255,255,255,.3);position:relative;z-index:1;">
-              img/hero.jpg
-            </p>
-          </div>
-        </div>
-
-        <!-- Badges flotantes -->
-        <div class="hero-badge" aria-hidden="true">
-          <span class="badge-icon">🚀</span>
-          <div>
-            <p class="badge-text">Entrega Rápida</p>
-            <p class="badge-sub">30 min o menos</p>
-          </div>
-        </div>
-
-        <div class="hero-rating" aria-hidden="true">
-          <p class="stars">⭐⭐⭐⭐⭐</p>
-          <p class="rating-num">4.9</p>
-          <p class="rating-label">Calificación</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ===================================================
+    <!-- ===================================================
        MENÚ / PRODUCTOS
   =================================================== -->
-  <section id="menu" class="menu" aria-label="Menú destacado">
-    <div class="container">
+    <section id="menu" class="menu" aria-label="Menú destacado">
+      <div class="container">
+        <div class="menu-header" data-reveal>
+          <span class="section-tag">Nuestro Menú</span>
+          <h2 class="section-title">
+            Productos <span style="color: var(--clr-primary)">Destacados</span>
+          </h2>
+          <p class="section-subtitle">
+            Preparados al momento con ingredientes frescos y mucho amor. ¡Elige
+            tu favorito y pide ahora!
+          </p>
+        </div>
 
-      <div class="menu-header" data-reveal>
-        <span class="section-tag">Nuestro Menú</span>
-        <h2 class="section-title">Productos <span style="color:var(--clr-primary)">Destacados</span></h2>
-        <p class="section-subtitle">
-          Preparados al momento con ingredientes frescos y mucho amor.
-          ¡Elige tu favorito y pide ahora!
-        </p>
-      </div>
+        <!-- Filtro rápido de categorías -->
+        <div
+          class="menu-filters"
+          data-reveal
+          role="tablist"
+          aria-label="Filtro por categoría de productos"
+        >
+          <button
+            type="button"
+            class="filter-btn active"
+            data-filter="all"
+            role="tab"
+            aria-selected="true"
+          >
+            ✨ Todos
+          </button>
+          <button
+            type="button"
+            class="filter-btn"
+            data-filter="hamburguesas"
+            role="tab"
+            aria-selected="false"
+          >
+            🍔 Hamburguesas
+          </button>
+          <button
+            type="button"
+            class="filter-btn"
+            data-filter="acompanantes"
+            role="tab"
+            aria-selected="false"
+          >
+            🍟 Acompañantes
+          </button>
+          <button
+            type="button"
+            class="filter-btn"
+            data-filter="veggie"
+            role="tab"
+            aria-selected="false"
+          >
+            🌿 Veggie
+          </button>
+        </div>
 
-      <!-- Filtro rápido de categorías -->
-      <div class="menu-filters" data-reveal role="tablist" aria-label="Filtro por categoría de productos">
-        <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
-          ✨ Todos
-        </button>
-        <button type="button" class="filter-btn" data-filter="hamburguesas" role="tab" aria-selected="false">
-          🍔 Hamburguesas
-        </button>
-        <button type="button" class="filter-btn" data-filter="acompanantes" role="tab" aria-selected="false">
-          🍟 Acompañantes
-        </button>
-        <button type="button" class="filter-btn" data-filter="veggie" role="tab" aria-selected="false">
-          🌿 Veggie
-        </button>
-      </div>
-
-      <div class="menu-grid">
-
-        <!-- Card 1 -->
-        <article class="menu-card shimmer" data-reveal data-delay="100" data-category="hamburguesas" aria-label="Lola Clásica">
-          <div class="card-img bg-1" aria-hidden="true">🍔
-            <span class="card-badge">⭐ Popular</span>
-          </div>
-          <div class="card-body">
-            <h3 class="card-name">Lola Clásica</h3>
-            <p class="card-desc">
-              Carne angus 180 g, queso cheddar fundido, lechuga crocante,
-              tomate fresco y nuestra salsa secreta.
-            </p>
-            <div class="card-footer">
-              <p class="card-price">
-                <span class="currency">Bs.</span>8.00
+        <div class="menu-grid">
+          <!-- Card 1 -->
+          <article
+            class="menu-card shimmer"
+            data-reveal
+            data-delay="100"
+            data-category="hamburguesas"
+            aria-label="Lola Clásica"
+          >
+            <div class="card-img bg-1" aria-hidden="true">
+              🍔
+              <span class="card-badge">⭐ Popular</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-name">Lola Clásica</h3>
+              <p class="card-desc">
+                Carne angus 180 g, queso cheddar fundido, lechuga crocante,
+                tomate fresco y nuestra salsa secreta.
               </p>
-              <button class="card-btn" aria-label="Añadir Lola Clásica al pedido">+</button>
+              <div class="card-footer">
+                <p class="card-price"><span class="currency">Bs.</span>8.00</p>
+                <button
+                  class="card-btn"
+                  aria-label="Añadir Lola Clásica al pedido"
+                >
+                  +
+                </button>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- Card 2 -->
-        <article class="menu-card shimmer" data-reveal data-delay="200" data-category="hamburguesas" aria-label="Double Trouble">
-          <div class="card-img bg-2" aria-hidden="true">🥩
-            <span class="card-badge" style="background:#f4a261;">🔥 Hot</span>
-          </div>
-          <div class="card-body">
-            <h3 class="card-name">Double Trouble</h3>
-            <p class="card-desc">
-              Doble carne, doble queso, jalapeños, cebolla caramelizada
-              y mayonesa de chipotle ahumado.
-            </p>
-            <div class="card-footer">
-              <p class="card-price"><span class="currency">Bs.</span>12.00</p>
-              <button class="card-btn" aria-label="Añadir Double Trouble al pedido">+</button>
+          <!-- Card 2 -->
+          <article
+            class="menu-card shimmer"
+            data-reveal
+            data-delay="200"
+            data-category="hamburguesas"
+            aria-label="Double Trouble"
+          >
+            <div class="card-img bg-2" aria-hidden="true">
+              🥩
+              <span class="card-badge" style="background: #f4a261">🔥 Hot</span>
             </div>
-          </div>
-        </article>
-
-        <!-- Card 3 -->
-        <article class="menu-card shimmer" data-reveal data-delay="300" data-category="acompanantes" aria-label="Papas Lola">
-          <div class="card-img bg-3" aria-hidden="true">🍟
-            <span class="card-badge" style="background:#f4c430;color:#333;">Combo</span>
-          </div>
-          <div class="card-body">
-            <h3 class="card-name">Papas Lola</h3>
-            <p class="card-desc">
-              Papas crujientes con skin, aliñadas con sal marina, romero
-              y acompañadas de dip de queso azul.
-            </p>
-            <div class="card-footer">
-              <p class="card-price"><span class="currency">Bs.</span>5.00</p>
-              <button class="card-btn" aria-label="Añadir Papas Lola al pedido">+</button>
+            <div class="card-body">
+              <h3 class="card-name">Double Trouble</h3>
+              <p class="card-desc">
+                Doble carne, doble queso, jalapeños, cebolla caramelizada y
+                mayonesa de chipotle ahumado.
+              </p>
+              <div class="card-footer">
+                <p class="card-price"><span class="currency">Bs.</span>12.00</p>
+                <button
+                  class="card-btn"
+                  aria-label="Añadir Double Trouble al pedido"
+                >
+                  +
+                </button>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- Card 4 -->
-        <article class="menu-card shimmer" data-reveal data-delay="400" data-category="veggie" aria-label="Green Vibes">
-          <div class="card-img bg-4" aria-hidden="true">🥗
-            <span class="card-badge" style="background:#2a9d8f;">🌿 Veggie</span>
-          </div>
-          <div class="card-body">
-            <h3 class="card-name">Green Vibes</h3>
-            <p class="card-desc">
-              Burger vegana de legumbres y quinoa, aguacate, germinados,
-              tomate cherry y aderezo de limón.
-            </p>
-            <div class="card-footer">
-              <p class="card-price"><span class="currency">Bs.</span>9.00</p>
-              <button class="card-btn" aria-label="Añadir Green Vibes al pedido">+</button>
+          <!-- Card 3 -->
+          <article
+            class="menu-card shimmer"
+            data-reveal
+            data-delay="300"
+            data-category="acompanantes"
+            aria-label="Papas Lola"
+          >
+            <div class="card-img bg-3" aria-hidden="true">
+              🍟
+              <span class="card-badge" style="background: #f4c430; color: #333"
+                >Combo</span
+              >
             </div>
-          </div>
-        </article>
+            <div class="card-body">
+              <h3 class="card-name">Papas Lola</h3>
+              <p class="card-desc">
+                Papas crujientes con skin, aliñadas con sal marina, romero y
+                acompañadas de dip de queso azul.
+              </p>
+              <div class="card-footer">
+                <p class="card-price"><span class="currency">Bs.</span>5.00</p>
+                <button
+                  class="card-btn"
+                  aria-label="Añadir Papas Lola al pedido"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
 
-      </div><!-- /menu-grid -->
-    </div>
-  </section>
+          <!-- Card 4 -->
+          <article
+            class="menu-card shimmer"
+            data-reveal
+            data-delay="400"
+            data-category="veggie"
+            aria-label="Green Vibes"
+          >
+            <div class="card-img bg-4" aria-hidden="true">
+              🥗
+              <span class="card-badge" style="background: #2a9d8f"
+                >🌿 Veggie</span
+              >
+            </div>
+            <div class="card-body">
+              <h3 class="card-name">Green Vibes</h3>
+              <p class="card-desc">
+                Burger vegana de legumbres y quinoa, aguacate, germinados,
+                tomate cherry y aderezo de limón.
+              </p>
+              <div class="card-footer">
+                <p class="card-price"><span class="currency">Bs.</span>9.00</p>
+                <button
+                  class="card-btn"
+                  aria-label="Añadir Green Vibes al pedido"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- /menu-grid -->
+      </div>
+    </section>
 
-
-  <!-- ===================================================
+    <!-- ===================================================
        EQUIPO DE DESARROLLO
   =================================================== -->
-  <section id="equipo" class="team" aria-label="Equipo de desarrollo">
-    <div class="container">
+    <section id="equipo" class="team" aria-label="Equipo de desarrollo">
+      <div class="container">
+        <div class="team-header" data-reveal>
+          <span class="section-tag">Detrás del Proyecto</span>
+          <h2 class="section-title">
+            Equipo de <span style="color: var(--clr-primary)">Desarrollo</span>
+          </h2>
+          <p class="section-subtitle">
+            Estudiantes apasionados que diseñaron y construyeron esta plataforma
+            con creatividad, código y muchas hamburguesas.
+          </p>
+        </div>
 
-      <div class="team-header" data-reveal>
-        <span class="section-tag">Detrás del Proyecto</span>
-        <h2 class="section-title">Equipo de <span style="color:var(--clr-primary)">Desarrollo</span></h2>
-        <p class="section-subtitle">
-          Estudiantes apasionados que diseñaron y construyeron esta plataforma
-          con creatividad, código y muchas hamburguesas.
-        </p>
+        <div class="team-grid">
+          <!-- Integrante 1: Andres -->
+          <article
+            class="team-card"
+            data-reveal
+            data-delay="100"
+            aria-label="Andres - Frontend, UI y Control de Versiones"
+          >
+            <div class="team-photo">
+              <img
+                src="img/miembro1.jpg"
+                alt="Andrés Pereira — Frontend, UI y Control de Versiones"
+                class="team-img"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="team-name">Andrés Pereira</h3>
+            <p class="team-role">Frontend, UI y Control de Versiones</p>
+            <div class="team-tags">
+              <span>HTML5 / CSS3</span>
+              <span>Diseño UI</span>
+              <span>Git / GitHub</span>
+              <span>Documentación</span>
+            </div>
+            <p class="team-bio">
+              Encargado de la estructura HTML, estilos visuales y responsivos,
+              manejo de Git/GitHub y documentación del proyecto.
+            </p>
+            <div class="team-socials" aria-label="Redes sociales de Andres">
+              <a
+                href="#"
+                class="social-link"
+                aria-label="GitHub de Andrés Pereira"
+                >🐙</a
+              >
+              <a
+                href="#"
+                class="social-link"
+                aria-label="LinkedIn de Andrés Pereira"
+                >💼</a
+              >
+              <a
+                href="#"
+                class="social-link"
+                aria-label="Portafolio de Andrés Pereira"
+                >🌐</a
+              >
+            </div>
+          </article>
+
+          <!-- Integrante 2: Andrés Urbina -->
+          <article
+            class="team-card"
+            data-reveal
+            data-delay="200"
+            aria-label="Andrés Urbina - Backend y Lógica"
+          >
+            <div class="team-photo">
+              <img
+                src="img/miembro2.jpg"
+                alt="Andrés Urbina — Backend / Lógica"
+                class="team-img team-img--portrait"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="team-name">Andrés Urbina</h3>
+            <p class="team-role">Backend / Lógica</p>
+            <div class="team-tags">
+              <span>JavaScript</span>
+              <span>Validación</span>
+              <span>WhatsApp API</span>
+              <span>Filtros UI</span>
+            </div>
+            <p class="team-bio">
+              Encargado de la lógica en JavaScript, filtros interactivos del
+              menú, validación de formularios y generación del enlace a
+              WhatsApp.
+            </p>
+            <div
+              class="team-socials"
+              aria-label="Redes sociales de Andrés Urbina"
+            >
+              <a
+                href="#"
+                class="social-link"
+                aria-label="GitHub de Andrés Urbina"
+                >🐙</a
+              >
+              <a
+                href="#"
+                class="social-link"
+                aria-label="LinkedIn de Andrés Urbina"
+                >💼</a
+              >
+              <a
+                href="#"
+                class="social-link"
+                aria-label="Portafolio de Andrés Urbina"
+                >🌐</a
+              >
+            </div>
+          </article>
+        </div>
+        <!-- /team-grid -->
       </div>
+    </section>
 
-      <div class="team-grid">
-
-        <!-- Integrante 1: Andres -->
-        <article class="team-card" data-reveal data-delay="100" aria-label="Andres - Frontend, UI y Control de Versiones">
-          <div class="team-photo">
-            <img src="img/miembro1.jpg" alt="Andrés Pereira — Frontend, UI y Control de Versiones" class="team-img" loading="lazy" />
-          </div>
-          <h3 class="team-name">Andrés Pereira</h3>
-          <p class="team-role">Frontend, UI y Control de Versiones</p>
-          <div class="team-tags">
-            <span>HTML5 / CSS3</span>
-            <span>Diseño UI</span>
-            <span>Git / GitHub</span>
-            <span>Documentación</span>
-          </div>
-          <p class="team-bio">
-            Encargado de la estructura HTML, estilos visuales y responsivos,
-            manejo de Git/GitHub y documentación del proyecto.
-          </p>
-          <div class="team-socials" aria-label="Redes sociales de Andres">
-            <a href="#" class="social-link" aria-label="GitHub de Andrés Pereira">🐙</a>
-            <a href="#" class="social-link" aria-label="LinkedIn de Andrés Pereira">💼</a>
-            <a href="#" class="social-link" aria-label="Portafolio de Andrés Pereira">🌐</a>
-          </div>
-        </article>
-
-        <!-- Integrante 2: Andrés Urbina -->
-        <article class="team-card" data-reveal data-delay="200" aria-label="Andrés Urbina - Backend y Lógica">
-          <div class="team-photo">
-            <img src="img/miembro2.jpg" alt="Andrés Urbina — Backend / Lógica" class="team-img team-img--portrait" loading="lazy" />
-          </div>
-          <h3 class="team-name">Andrés Urbina</h3>
-          <p class="team-role">Backend / Lógica</p>
-          <div class="team-tags">
-            <span>JavaScript</span>
-            <span>Validación</span>
-            <span>WhatsApp API</span>
-            <span>Filtros UI</span>
-          </div>
-          <p class="team-bio">
-            Encargado de la lógica en JavaScript, filtros interactivos del menú,
-            validación de formularios y generación del enlace a WhatsApp.
-          </p>
-          <div class="team-socials" aria-label="Redes sociales de Andrés Urbina">
-            <a href="#" class="social-link" aria-label="GitHub de Andrés Urbina">🐙</a>
-            <a href="#" class="social-link" aria-label="LinkedIn de Andrés Urbina">💼</a>
-            <a href="#" class="social-link" aria-label="Portafolio de Andrés Urbina">🌐</a>
-          </div>
-        </article>
-
-      </div><!-- /team-grid -->
-    </div>
-  </section>
-
-
-  <!-- ===================================================
+    <!-- ===================================================
        CONTACTO & FORMULARIO WHATSAPP
   =================================================== -->
-  <section id="contacto" class="contacto" aria-label="Sección de contacto y pedidos">
-    <div class="container">
-
-      <div class="contacto-grid">
-
-        <!-- Columna Informativa -->
-        <div class="contacto-info" data-reveal="left">
-          <span class="section-tag">Atención Inmediata</span>
-          <h2 class="section-title">Haz tu Pedido o <span style="color:var(--clr-primary)">Escríbenos</span></h2>
-          <p class="section-subtitle" style="margin-bottom:1.6rem;">
-            Completa tus datos y las especificaciones de tu comida favorita.
-            Generaremos tu pedido directo a nuestro WhatsApp sin intermediarios ni demoras.
-          </p>
-
-          <div class="contacto-card">
-            <h3>⚡ Pedidos 100% Personalizados</h3>
-            <p style="color:var(--clr-muted);font-size:.88rem;line-height:1.6;">
-              ¿Quieres salsas extra, sin cebolla o doble queso? ¡Nosotros nos encargamos!
+    <section
+      id="contacto"
+      class="contacto"
+      aria-label="Sección de contacto y pedidos"
+    >
+      <div class="container">
+        <div class="contacto-grid">
+          <!-- Columna Informativa -->
+          <div class="contacto-info" data-reveal="left">
+            <span class="section-tag">Atención Inmediata</span>
+            <h2 class="section-title">
+              Haz tu Pedido o
+              <span style="color: var(--clr-primary)">Escríbenos</span>
+            </h2>
+            <p class="section-subtitle" style="margin-bottom: 1.6rem">
+              Completa tus datos y las especificaciones de tu comida favorita.
+              Generaremos tu pedido directo a nuestro WhatsApp sin
+              intermediarios ni demoras.
             </p>
 
-            <div class="contacto-perks">
-              <div class="perk-item">
-                <span class="perk-icon" aria-hidden="true">🛵</span>
-                <span>Delivery rápido y puntual directo a tu puerta</span>
-              </div>
-              <div class="perk-item">
-                <span class="perk-icon" aria-hidden="true">⏱️</span>
-                <span>Atención en menos de 5 minutos garantizada</span>
-              </div>
-              <div class="perk-item">
-                <span class="perk-icon" aria-hidden="true">💳</span>
-                <span>Aceptamos Pago Móvil, Efectivo, Zelle y Binance</span>
-              </div>
-              <div class="perk-item">
-                <span class="perk-icon" aria-hidden="true">🎁</span>
-                <span>Promociones exclusivas para pedidos realizados desde la web</span>
+            <div class="contacto-card">
+              <h3>⚡ Pedidos 100% Personalizados</h3>
+              <p
+                style="
+                  color: var(--clr-muted);
+                  font-size: 0.88rem;
+                  line-height: 1.6;
+                "
+              >
+                ¿Quieres salsas extra, sin cebolla o doble queso? ¡Nosotros nos
+                encargamos!
+              </p>
+
+              <div class="contacto-perks">
+                <div class="perk-item">
+                  <span class="perk-icon" aria-hidden="true">🛵</span>
+                  <span>Delivery rápido y puntual directo a tu puerta</span>
+                </div>
+                <div class="perk-item">
+                  <span class="perk-icon" aria-hidden="true">⏱️</span>
+                  <span>Atención en menos de 5 minutos garantizada</span>
+                </div>
+                <div class="perk-item">
+                  <span class="perk-icon" aria-hidden="true">💳</span>
+                  <span>Aceptamos Pago Móvil, Efectivo, Zelle y Binance</span>
+                </div>
+                <div class="perk-item">
+                  <span class="perk-icon" aria-hidden="true">🎁</span>
+                  <span
+                    >Promociones exclusivas para pedidos realizados desde la
+                    web</span
+                  >
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Columna Formulario -->
-        <div class="contacto-form-col" data-reveal="right">
-          <div class="form-box">
-            <h3 class="form-title">Envíanos tu Mensaje</h3>
-            <p class="form-desc">Llena el formulario para conectar directamente con nuestro WhatsApp con tu pedido ya redactado.</p>
+          <!-- Columna Formulario -->
+          <div class="contacto-form-col" data-reveal="right">
+            <div class="form-box">
+              <h3 class="form-title">Envíanos tu Mensaje</h3>
+              <p class="form-desc">
+                Llena el formulario para conectar directamente con nuestro
+                WhatsApp con tu pedido ya redactado.
+              </p>
 
-            <form id="contactForm" novalidate aria-label="Formulario de contacto para pedidos WhatsApp">
-              <div class="form-grid">
+              <form
+                id="contactForm"
+                novalidate
+                aria-label="Formulario de contacto para pedidos WhatsApp"
+              >
+                <div class="form-grid">
+                  <!-- Campo Nombre -->
+                  <div class="form-group">
+                    <label for="clienteNombre" class="form-label">
+                      Nombre Completo <span class="req">*</span>
+                    </label>
+                    <div class="input-wrapper">
+                      <span class="input-icon" aria-hidden="true">👤</span>
+                      <input
+                        type="text"
+                        id="clienteNombre"
+                        name="nombre"
+                        class="form-control"
+                        placeholder="Ej. Carlos Mendoza"
+                        required
+                        autocomplete="name"
+                      />
+                    </div>
+                    <span class="form-error" id="errorNombre"
+                      >Ingresa tu nombre completo (mínimo 3 caracteres).</span
+                    >
+                  </div>
 
-                <!-- Campo Nombre -->
+                  <!-- Campo Teléfono -->
+                  <div class="form-group">
+                    <label for="clienteTelefono" class="form-label">
+                      Teléfono / WhatsApp <span class="req">*</span>
+                    </label>
+                    <div class="input-wrapper">
+                      <span class="input-icon" aria-hidden="true">📱</span>
+                      <input
+                        type="tel"
+                        id="clienteTelefono"
+                        name="telefono"
+                        class="form-control"
+                        placeholder="Ej. 0414 1234567"
+                        required
+                        autocomplete="tel"
+                      />
+                    </div>
+                    <span class="form-error" id="errorTelefono"
+                      >Ingresa un número válido (mínimo 7 dígitos).</span
+                    >
+                  </div>
+                </div>
+                <!-- /form-grid -->
+
+                <!-- Campo Selección Producto -->
                 <div class="form-group">
-                  <label for="clienteNombre" class="form-label">
-                    Nombre Completo <span class="req">*</span>
+                  <label for="clienteProducto" class="form-label">
+                    Producto o Servicio de Interés <span class="req">*</span>
                   </label>
                   <div class="input-wrapper">
-                    <span class="input-icon" aria-hidden="true">👤</span>
-                    <input 
-                      type="text" 
-                      id="clienteNombre" 
-                      name="nombre" 
-                      class="form-control" 
-                      placeholder="Ej. Carlos Mendoza" 
-                      required 
-                      autocomplete="name"
-                    />
+                    <span class="input-icon" aria-hidden="true">🍔</span>
+                    <select
+                      id="clienteProducto"
+                      name="producto"
+                      class="form-control"
+                      required
+                    >
+                      <option value="" disabled selected>
+                        Selecciona una opción...
+                      </option>
+                      <option value="Lola Clásica (Bs. 8.00)">
+                        🍔 Lola Clásica — Bs. 8.00
+                      </option>
+                      <option value="Double Trouble (Bs. 12.00)">
+                        🥩 Double Trouble — Bs. 12.00
+                      </option>
+                      <option value="Papas Lola (Bs. 5.00)">
+                        🍟 Papas Lola — Bs. 5.00
+                      </option>
+                      <option value="Green Vibes (Bs. 9.00)">
+                        🥗 Green Vibes — Bs. 9.00
+                      </option>
+                      <option value="Combo Familiar / Varios Productos">
+                        ✨ Combo Completo / Varios Productos
+                      </option>
+                      <option value="Servicio de Catering / Evento">
+                        🎉 Eventos Especiales / Catering
+                      </option>
+                      <option value="Consulta General">
+                        💬 Otra consulta general
+                      </option>
+                    </select>
                   </div>
-                  <span class="form-error" id="errorNombre">Ingresa tu nombre completo (mínimo 3 caracteres).</span>
+                  <span class="form-error" id="errorProducto"
+                    >Por favor selecciona un producto o tipo de consulta.</span
+                  >
                 </div>
 
-                <!-- Campo Teléfono -->
+                <!-- Campo Mensaje -->
                 <div class="form-group">
-                  <label for="clienteTelefono" class="form-label">
-                    Teléfono / WhatsApp <span class="req">*</span>
+                  <label for="clienteMensaje" class="form-label">
+                    Detalles del Pedido o Mensaje <span class="req">*</span>
                   </label>
-                  <div class="input-wrapper">
-                    <span class="input-icon" aria-hidden="true">📱</span>
-                    <input 
-                      type="tel" 
-                      id="clienteTelefono" 
-                      name="telefono" 
-                      class="form-control" 
-                      placeholder="Ej. 0414 1234567" 
-                      required 
-                      autocomplete="tel"
-                    />
-                  </div>
-                  <span class="form-error" id="errorTelefono">Ingresa un número válido (mínimo 7 dígitos).</span>
+                  <textarea
+                    id="clienteMensaje"
+                    name="mensaje"
+                    class="form-control"
+                    rows="4"
+                    placeholder="Escribe aquí tu dirección para delivery, cantidades, salsas o cualquier consulta..."
+                    required
+                  ></textarea>
+                  <span class="form-error" id="errorMensaje"
+                    >Por favor describe tu pedido o mensaje (mínimo 5
+                    caracteres).</span
+                  >
                 </div>
 
-              </div><!-- /form-grid -->
-
-              <!-- Campo Selección Producto -->
-              <div class="form-group">
-                <label for="clienteProducto" class="form-label">
-                  Producto o Servicio de Interés <span class="req">*</span>
-                </label>
-                <div class="input-wrapper">
-                  <span class="input-icon" aria-hidden="true">🍔</span>
-                  <select id="clienteProducto" name="producto" class="form-control" required>
-                    <option value="" disabled selected>Selecciona una opción...</option>
-                    <option value="Lola Clásica (Bs. 8.00)">🍔 Lola Clásica — Bs. 8.00</option>
-                    <option value="Double Trouble (Bs. 12.00)">🥩 Double Trouble — Bs. 12.00</option>
-                    <option value="Papas Lola (Bs. 5.00)">🍟 Papas Lola — Bs. 5.00</option>
-                    <option value="Green Vibes (Bs. 9.00)">🥗 Green Vibes — Bs. 9.00</option>
-                    <option value="Combo Familiar / Varios Productos">✨ Combo Completo / Varios Productos</option>
-                    <option value="Servicio de Catering / Evento">🎉 Eventos Especiales / Catering</option>
-                    <option value="Consulta General">💬 Otra consulta general</option>
-                  </select>
-                </div>
-                <span class="form-error" id="errorProducto">Por favor selecciona un producto o tipo de consulta.</span>
-              </div>
-
-              <!-- Campo Mensaje -->
-              <div class="form-group">
-                <label for="clienteMensaje" class="form-label">
-                  Detalles del Pedido o Mensaje <span class="req">*</span>
-                </label>
-                <textarea 
-                  id="clienteMensaje" 
-                  name="mensaje" 
-                  class="form-control" 
-                  rows="4" 
-                  placeholder="Escribe aquí tu dirección para delivery, cantidades, salsas o cualquier consulta..." 
-                  required
-                ></textarea>
-                <span class="form-error" id="errorMensaje">Por favor describe tu pedido o mensaje (mínimo 5 caracteres).</span>
-              </div>
-
-              <!-- Botón Enviar WhatsApp -->
-              <button type="submit" class="btn-whatsapp-submit" id="btnSubmit" aria-label="Enviar formulario por WhatsApp">
-                <span aria-hidden="true">📲</span>
-                <span>Enviar Pedido por WhatsApp</span>
-              </button>
-
-            </form>
+                <!-- Botón Enviar WhatsApp -->
+                <button
+                  type="submit"
+                  class="btn-whatsapp-submit"
+                  id="btnSubmit"
+                  aria-label="Enviar formulario por WhatsApp"
+                >
+                  <span aria-hidden="true">📲</span>
+                  <span>Enviar Pedido por WhatsApp</span>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
+        <!-- /contacto-grid -->
+      </div>
+    </section>
 
-      </div><!-- /contacto-grid -->
-
-    </div>
-  </section>
-
-
-  <!-- ===================================================
+    <!-- ===================================================
        FOOTER
   =================================================== -->
-  <footer class="footer-main" aria-label="Pie de página con información de contacto">
-
-    <div class="footer-top">
-      <div class="container footer-grid">
-
-        <!-- Brand -->
-        <div class="footer-brand" data-reveal>
-          <div class="nav-logo" style="margin-bottom:1rem;">
-            <span class="logo-icon">🍔</span>
-            <span>Lola <span style="color:var(--clr-primary)">Street</span> Food</span>
+    <footer
+      class="footer-main"
+      aria-label="Pie de página con información de contacto"
+    >
+      <div class="footer-top">
+        <div class="container footer-grid">
+          <!-- Brand -->
+          <div class="footer-brand" data-reveal>
+            <div class="nav-logo" style="margin-bottom: 1rem">
+              <span class="logo-icon">🍔</span>
+              <span
+                >Lola
+                <span style="color: var(--clr-primary)">Street</span> Food</span
+              >
+            </div>
+            <p>
+              Nació en la calle, creció en los corazones. Desde 2021 llevamos
+              sabor auténtico directo a tu mesa con amor y los mejores
+              ingredientes.
+            </p>
           </div>
-          <p>
-            Nació en la calle, creció en los corazones.
-            Desde 2021 llevamos sabor auténtico directo a tu mesa con amor
-            y los mejores ingredientes.
-          </p>
-        </div>
 
-        <!-- Quick links -->
-        <div data-reveal data-delay="100">
-          <h4 class="footer-heading">Navegación</h4>
-          <ul class="footer-links" role="list">
-            <li><a href="#inicio">🏠 Inicio</a></li>
-            <li><a href="#menu">🍔 Menú</a></li>
-            <li><a href="#equipo">👥 Equipo</a></li>
-            <li><a href="#contacto">📍 Contacto</a></li>
-          </ul>
-        </div>
+          <!-- Quick links -->
+          <div data-reveal data-delay="100">
+            <h4 class="footer-heading">Navegación</h4>
+            <ul class="footer-links" role="list">
+              <li><a href="#inicio">🏠 Inicio</a></li>
+              <li><a href="#menu">🍔 Menú</a></li>
+              <li><a href="#equipo">👥 Equipo</a></li>
+              <li><a href="#contacto">📍 Contacto</a></li>
+            </ul>
+          </div>
 
-        <!-- Horarios -->
-        <div data-reveal data-delay="200">
-          <h4 class="footer-heading">Horarios</h4>
-          <ul class="footer-links" role="list">
-            <li>
-              <span style="color:var(--clr-light);font-size:.88rem;font-weight:600;">Lun – Vie</span>
-              <p style="color:var(--clr-muted);font-size:.85rem;">11:00 am – 10:00 pm</p>
-            </li>
-            <li style="margin-top:.6rem;">
-              <span style="color:var(--clr-light);font-size:.88rem;font-weight:600;">Sáb – Dom</span>
-              <p style="color:var(--clr-muted);font-size:.85rem;">10:00 am – 11:00 pm</p>
-            </li>
-            <li style="margin-top:.8rem;">
-              <span style="
-                display:inline-block;
-                background:rgba(42,157,143,.15);
-                color:#2a9d8f;
-                font-size:.75rem;
-                font-weight:700;
-                padding:.2rem .8rem;
-                border-radius:50px;
-                border:1px solid rgba(42,157,143,.3);
-              ">🟢 Abierto Ahora</span>
-            </li>
-          </ul>
-        </div>
+          <!-- Horarios -->
+          <div data-reveal data-delay="200">
+            <h4 class="footer-heading">Horarios</h4>
+            <ul class="footer-links" role="list">
+              <li>
+                <span
+                  style="
+                    color: var(--clr-light);
+                    font-size: 0.88rem;
+                    font-weight: 600;
+                  "
+                  >Lun – Vie</span
+                >
+                <p style="color: var(--clr-muted); font-size: 0.85rem">
+                  11:00 am – 10:00 pm
+                </p>
+              </li>
+              <li style="margin-top: 0.6rem">
+                <span
+                  style="
+                    color: var(--clr-light);
+                    font-size: 0.88rem;
+                    font-weight: 600;
+                  "
+                  >Sáb – Dom</span
+                >
+                <p style="color: var(--clr-muted); font-size: 0.85rem">
+                  10:00 am – 11:00 pm
+                </p>
+              </li>
+              <li style="margin-top: 0.8rem">
+                <span
+                  style="
+                    display: inline-block;
+                    background: rgba(42, 157, 143, 0.15);
+                    color: #2a9d8f;
+                    font-size: 0.75rem;
+                    font-weight: 700;
+                    padding: 0.2rem 0.8rem;
+                    border-radius: 50px;
+                    border: 1px solid rgba(42, 157, 143, 0.3);
+                  "
+                  >🟢 Abierto Ahora</span
+                >
+              </li>
+            </ul>
+          </div>
 
-        <!-- Ubicación & Contacto -->
-        <div data-reveal data-delay="300">
-          <h4 class="footer-heading">Ubicación &amp; Contacto</h4>
+          <!-- Ubicación & Contacto -->
+          <div data-reveal data-delay="300">
+            <h4 class="footer-heading">Ubicación &amp; Contacto</h4>
 
-          <div class="info-item">
-            <div class="info-icon" aria-hidden="true">📍</div>
-            <div class="info-text">
-              <strong>Dirección</strong>
-              Av. Principal, Local #12,<br />
-              Ciudad Ejemplo, Venezuela
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">📍</div>
+              <div class="info-text">
+                <strong>Dirección</strong>
+                Av. Principal, Local #12,<br />
+                Ciudad Ejemplo, Venezuela
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">📞</div>
+              <div class="info-text">
+                <strong>Teléfono / WhatsApp</strong>
+                <a
+                  href="tel:+584165550000"
+                  style="color: var(--clr-muted); transition: 0.3s"
+                  onmouseover="this.style.color = 'var(--clr-primary)'"
+                  onmouseout="this.style.color = 'var(--clr-muted)'"
+                >
+                  +58 416 555 0000
+                </a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">✉️</div>
+              <div class="info-text">
+                <strong>Correo</strong>
+                <a
+                  href="mailto:hola@lolastreetfood.com"
+                  style="color: var(--clr-muted); transition: 0.3s"
+                  onmouseover="this.style.color = 'var(--clr-primary)'"
+                  onmouseout="this.style.color = 'var(--clr-muted)'"
+                >
+                  hola@lolastreetfood.com
+                </a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">📱</div>
+              <div class="info-text">
+                <strong>Síguenos</strong>
+                <a
+                  href="#"
+                  style="color: var(--clr-muted); transition: 0.3s"
+                  onmouseover="this.style.color = 'var(--clr-primary)'"
+                  onmouseout="this.style.color = 'var(--clr-muted)'"
+                >
+                  @lolastreetfood
+                </a>
+              </div>
             </div>
           </div>
-
-          <div class="info-item">
-            <div class="info-icon" aria-hidden="true">📞</div>
-            <div class="info-text">
-              <strong>Teléfono / WhatsApp</strong>
-              <a href="tel:+584165550000" style="color:var(--clr-muted);transition:.3s" onmouseover="this.style.color='var(--clr-primary)'" onmouseout="this.style.color='var(--clr-muted)'">
-                +58 416 555 0000
-              </a>
-            </div>
-          </div>
-
-          <div class="info-item">
-            <div class="info-icon" aria-hidden="true">✉️</div>
-            <div class="info-text">
-              <strong>Correo</strong>
-              <a href="mailto:hola@lolastreetfood.com" style="color:var(--clr-muted);transition:.3s" onmouseover="this.style.color='var(--clr-primary)'" onmouseout="this.style.color='var(--clr-muted)'">
-                hola@lolastreetfood.com
-              </a>
-            </div>
-          </div>
-
-          <div class="info-item">
-            <div class="info-icon" aria-hidden="true">📱</div>
-            <div class="info-text">
-              <strong>Síguenos</strong>
-              <a href="#" style="color:var(--clr-muted);transition:.3s" onmouseover="this.style.color='var(--clr-primary)'" onmouseout="this.style.color='var(--clr-muted)'">
-                @lolastreetfood
-              </a>
-            </div>
-          </div>
-
         </div>
+        <!-- /footer-grid -->
+      </div>
+      <!-- /footer-top -->
 
-      </div><!-- /footer-grid -->
-    </div><!-- /footer-top -->
+      <!-- Footer bottom -->
+      <div class="container footer-bottom">
+        <p>
+          © <span id="year"></span> <span>Lola Street Food</span>. Todos los
+          derechos reservados.
+        </p>
+        <p>Hecho con <span>❤️</span> por el Equipo de Desarrollo — UNERMB</p>
+      </div>
+    </footer>
 
-    <!-- Footer bottom -->
-    <div class="container footer-bottom">
-      <p>© <span id="year"></span> <span>Lola Street Food</span>. Todos los derechos reservados.</p>
-      <p>Hecho con <span>❤️</span> por el Equipo de Desarrollo — UNERMB</p>
-    </div>
-
-  </footer>
-
-
-  <!-- ===================================================
+    <!-- ===================================================
        EXTRAS
   =================================================== -->
 
-  <!-- Toast notification -->
-  <div class="toast" role="alert" aria-live="polite" aria-atomic="true">
-    <span class="toast-icon">🛒</span>
-    <span class="toast-msg"></span>
-  </div>
+    <!-- Toast notification -->
+    <div class="toast" role="alert" aria-live="polite" aria-atomic="true">
+      <span class="toast-icon">🛒</span>
+      <span class="toast-msg"></span>
+    </div>
 
-  <!-- Scroll to top -->
-  <button class="scroll-top" aria-label="Volver al inicio">↑</button>
+    <!-- Scroll to top -->
+    <button class="scroll-top" aria-label="Volver al inicio">↑</button>
 
-  <!-- Scripts -->
-  <script src="js/main.js" defer></script>
-
-</body>
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+  </body>
 </html>
