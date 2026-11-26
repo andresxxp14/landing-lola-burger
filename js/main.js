@@ -332,7 +332,7 @@ const statsObs = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.5 },
+  { threshold: 0.5 ,
 );
 
 const statsSection = document.querySelector(".hero-stats");
