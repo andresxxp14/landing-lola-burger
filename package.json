@@ -1,0 +1,25 @@
+{
+  "name": "landing-lola-burger",
+  "version": "1.0.0",
+  "description": "Landing page moderna y responsiva para el negocio local de comida rápida **Lola Street Food**, desarrollada con apoyo de agentes de IA en **Google Antigravity**.",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"**/*.{html,css,js,md}\"",
+    "format:check": "prettier --check \"**/*.{html,css,js,md}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresxxp14/landing-lola-burger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/andresxxp14/landing-lola-burger/issues"
+  },
+  "homepage": "https://github.com/andresxxp14/landing-lola-burger#readme",
+  "devDependencies": {
+    "prettier": "^3.10.1"
+  }
+}
